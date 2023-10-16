@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap"');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Spartan', sans-serif;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.square {
+    width: 155px;
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    background-image: url('logo1.png'); /* Replace 'path/to/logo1.png' with the actual path to your logo file */
+    background-size: cover; /* This property ensures the logo will cover the entire .square div */
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 80px;
+    background: #E8E1D7;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px ;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px ;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+    position: relative;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: "";
+    width: 95%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container{
+	text-align: center;
+	background: #fff;
+}
+.header{
+	padding-top: 40px;
+	color: #444;
+	font-size: 20px;
+	margin: auto;
+	line-height: 50px;
+}
+.sub-container{
+	max-lines: 1200px;
+	margin: auto;
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.teams{
+	margin: 10px;
+	padding: 5px;
+	max-width: 40%;
+	cursor: pointer;
+	transition: 0.4s;
+	box-sizing: border-box;
+}
+.teams:hover{
+	background: #ddd;
+	border-radius: 12px;
+} 
+.teams img{
+	width: 300px;
+	height: 300px;
+}
+.name{
+	padding: 10px;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.desig{
+	font-style: italic;
+	color: #888;
+}
+.about{
+	margin: 20px 0;
+	font-weight: lighter;
+	color: #4e4e4e;
+}
+.social-links{
+	margin: 14px;
+}
+.social-links a{
+	display: inline-block;
+	height: 30x;
+	width: 30px;
+	transition: 0.4s;
+}
+.social-links a:hover{
+	transform: scale(1.5);
+}
+.social-links a i{
+	color: #444;
+}

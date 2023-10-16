@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap"');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Spartan', sans-serif;
+}
+#kit {
+    width: 196px;
+    height: 196px;
+    border-radius: 50%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+#ivan {
+    width: 196px;
+    height: 196px;
+    border-radius: 50%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+#jericho{
+    width: 196px;
+    height: 196px;
+    border-radius: 50%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+#richard {
+    width: 196px;
+    height: 196px;
+    border-radius: 50%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.square {
+    width: 155px;
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    background-image: url('logo1.png'); /* Replace 'path/to/logo1.png' with the actual path to your logo file */
+    background-size: cover; /* This property ensures the logo will cover the entire .square div */
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 80px;
+    background: #E8E1D7;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px ;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px ;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+    position: relative;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: "";
+    width: 95%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container{
+	text-align: center;
+	background: #fff;
+}
+.header{
+	padding-top: 40px;
+	color: #444;
+	font-size: 20px;
+	margin: auto;
+	line-height: 50px;
+}
+.sub-container{
+	max-lines: 1200px;
+	margin: auto;
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.teams{
+	margin: 10px;
+	padding: 5px;
+	max-width: 40%;
+	cursor: pointer;
+	transition: 0.4s;
+	box-sizing: border-box;
+    border: 1px solid black;
+}
+.teams:hover{
+	background: #ddd;
+	border-radius: 12px;
+} 
+.teams img{
+	width: 300px;
+	height: 300px;
+}
+.name{
+	padding: 5px;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.desig{
+	font-style: italic;
+	color: #888;
+}
+.about{
+	margin: 25px 0;
+	font-weight: lighter;
+	color: #4e4e4e;
+}
+.social-links{
+	margin: 14px;
+}
+.social-links a{
+	display: inline-block;
+	height: 30x;
+	width: 30px;
+	transition: 0.4s;
+}
+.social-links a:hover{
+	transform: scale(1.5);
+}
+.social-links a i{
+	color: #444;
+}
+.section-p1{
+    padding: 40px 80px;
+    font-family: 'Spartan', sans-serif;
+}
+.section-m1{
+    margin: 40px 0;
+}
+
+.aboutus {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-between; /* Align children divs to the left and right */
+}
+
+.left-column, .right-column {
+    width: 48%; /* Set width for the columns, leaving some space for margins */
+}
+
+.right-column {
+    text-align: left; /* Align text to the right in the right column */
+}
+
+/* Rest of your styles for headings, paragraphs, and list items can remain unchanged */
+
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: #ef3636;
+}
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+/*Updates*/
+#updates{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(banner.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+    margin-bottom: 0;
+}
+
+#updates h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#updates p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#updates p span{
+    color: #ffbd27;
+}
+
+#updates input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+#updates button{
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+#updates .form{
+    display: flex;
+    width: 40%;
+}
+
+/*Footer*/
+#col {
+    width: 155px;
+    height: 100px;
+    position: absolute;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo2{
+    position: fixed;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin: 0 0 8px 0;
+}
+footer .icon i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .icon i.hover,
+footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
